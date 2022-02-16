@@ -28,7 +28,8 @@ MAKEOPTS="-j8"
 
 ```sh
 genkernel --lvm --microcode=intel --install --kernel-config=/usr/src/linux/.config initramfs
-
+# https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers#Drivers
+emerge @module-rebuild
 ```
 
 - [Intel microcode](https://wiki.gentoo.org/wiki/Intel_microcode)
