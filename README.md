@@ -5,6 +5,26 @@
 NCPBD-TMT6G-BK8MY-4KQVJ-82KV2
 ```
 
+Decrypt and mount fs
+
+```sh
+encfs ~/Dropbox/Mulder/Private/ ~/Private/
+```
+
+Keymaps
+
+```sh
+# US
+localectl set-keymap us
+localectl set-x11-keymap us
+
+# UK
+localectl set-keymap gb
+localectl set-x11-keymap uk
+
+openbox --exit
+```
+
 ## Disks
 
 Boot and LVM for rest.
@@ -35,13 +55,6 @@ emerge @module-rebuild
 - [Intel microcode](https://wiki.gentoo.org/wiki/Intel_microcode)
 - [Safe CFLAGS](https://wiki.gentoo.org/wiki/Safe_CFLAGS#Haswell)
 - [Intel® Core™ i7-4800MQ Processor (6M Cache, up to 3.70 GHz)](https://www.intel.com/content/www/us/en/products/sku/75128/intel-core-i74800mq-processor-6m-cache-up-to-3-70-ghz/specifications.html?wapkw=Intel%28R%29%20Core%28TM%29%20i7-4800MQ)
-
-## Systemd
-
-- [systemd-boot](https://wiki.gentoo.org/wiki/Systemd-boot#Configuration)
-
-```
-```
 
 
 ## Resources
