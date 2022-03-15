@@ -25,9 +25,10 @@ lon=7.2561
 Spotify
 
 [spotifyd](https://github.com/Spotifyd/spotifyd/)
+[KeepassXC and secret service, a small walk-through](https://avaldes.co/2020/01/28/secret-service-keepassxc.html)
 
 ```sh
-apulse spotifyd --no-daemon --backend pulseaudio --bitrate 320 --device USB --username <username>  -p <password>
+apulse spotifyd ----backend pulseaudio --bitrate 320 --device USB --username <username> --password-cmd "secret-tool lookup spotify.com 002c0194-a278-4944-a249-736ad7424b96"
 ```
 
 [spotify-tui](https://github.com/Rigellute/spotify-tui)
