@@ -11,6 +11,37 @@ Decrypt and mount fs
 encfs ~/Dropbox/Mulder/Private/ ~/Private/
 ```
 
+Redshift
+
+```sh
+# ~/.config/redshift.conf
+[redshift]
+location-provider=manual
+[manual]
+lat=52.6477
+lon=7.2561
+```
+
+Spotify
+
+[spotifyd](https://github.com/Spotifyd/spotifyd/)
+
+```sh
+apulse spotifyd --no-daemon --backend pulseaudio --bitrate 320 --device USB --username <username>  -p <password>
+```
+
+[spotify-tui](https://github.com/Rigellute/spotify-tui)
+
+```sh
+spotify-qt --help
+```
+
+[spotify-qt](https://github.com/kraxarn/spotify-qt)
+
+```sh
+spotify-tui --help
+```
+
 Keymaps
 
 ```sh
@@ -23,6 +54,14 @@ localectl set-keymap gb
 localectl set-x11-keymap uk
 
 openbox --exit
+```
+
+## ALSA
+
+```sh
+aplay -L
+speaker-test -Ddefault:PCH -c 2
+speaker-test -Ddefault:USB -c 2
 ```
 
 ## Disks
@@ -59,6 +98,7 @@ emerge @module-rebuild
 
 ## Resources
 
+- [ALSA .asoundrc syntax](https://www.alsa-project.org/alsa-doc/alsa-lib/conf.html)
 - [Gentoo Encrypted Root, with LUKS and LVM](https://linux.arantius.com/gentoo-encrypted-root-with-luks-and-lvm)
 - [Gentoo LVM](https://wiki.gentoo.org/wiki/LVM)
 - [Gentoo Handbook](https://wiki.gentoo.org/wiki/Handbook:AMD64)
