@@ -22,6 +22,12 @@ lat=52.6477
 lon=7.2561
 ```
 
+Skype
+
+```sh
+apulse skypeforlinux %U
+```
+
 Spotify
 
 [spotifyd](https://github.com/Spotifyd/spotifyd/)
@@ -99,6 +105,7 @@ emerge @module-rebuild
 
 ## Resources
 
+- [Nvidia Optimus](http://us.download.nvidia.com/XFree86/Linux-x86_64/331.79/README/optimus.html)
 - [ALSA .asoundrc syntax](https://www.alsa-project.org/alsa-doc/alsa-lib/conf.html)
 - [Gentoo Encrypted Root, with LUKS and LVM](https://linux.arantius.com/gentoo-encrypted-root-with-luks-and-lvm)
 - [Gentoo LVM](https://wiki.gentoo.org/wiki/LVM)
