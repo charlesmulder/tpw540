@@ -102,6 +102,14 @@ emerge @module-rebuild
 - [Safe CFLAGS](https://wiki.gentoo.org/wiki/Safe_CFLAGS#Haswell)
 - [Intel® Core™ i7-4800MQ Processor (6M Cache, up to 3.70 GHz)](https://www.intel.com/content/www/us/en/products/sku/75128/intel-core-i74800mq-processor-6m-cache-up-to-3-70-ghz/specifications.html?wapkw=Intel%28R%29%20Core%28TM%29%20i7-4800MQ)
 
+## Audio Production
+
+- [qjackctl]()https://qjackctl.sourceforge.io/
+- [Jack Wiki](https://github.com/jackaudio/jackaudio.github.com/wiki)
+- [Jack apps](https://jackaudio.org/applications/)
+- [JAMin Mastering Suite](http://jamin.sourceforge.net/en/about.html)
+- [Audacity](https://manual.audacityteam.org/)
+- [Ardour 6](https://ardour.org/)
 
 ## Resources
 
