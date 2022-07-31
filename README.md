@@ -66,6 +66,10 @@ openbox --exit
 ## ALSA
 
 ```sh
+cat /proc/asound/cards
+```
+
+```sh
 aplay -L
 speaker-test -Ddefault:PCH -c 2
 speaker-test -Ddefault:USB -c 2
