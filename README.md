@@ -11,6 +11,22 @@ Decrypt and mount fs
 encfs ~/Dropbox/Mulder/Private/ ~/Private/
 ```
 
+Wifi
+
+```sh
+# list network devices
+nmcli dev status
+# check wifi is on
+nmcli radio wifi
+nmcli radio wifi on
+
+# list wifi networks
+nmcli dev wifi list
+# connect to wifi network
+# nmcli dev wifi connect $ssid password "secret"
+nmcli --ask dev wifi connect $ssid
+```
+
 Redshift
 
 ```sh
