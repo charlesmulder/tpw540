@@ -5,6 +5,12 @@
 NCPBD-TMT6G-BK8MY-4KQVJ-82KV2
 ```
 
+Bela 
+
+```
+modprobe rndis_host
+```
+
 Decrypt and mount fs
 
 ```sh
@@ -25,6 +31,13 @@ nmcli dev wifi list
 # connect to wifi network
 # nmcli dev wifi connect $ssid password "secret"
 nmcli --ask dev wifi connect $ssid
+```
+
+When some wifi networks aren't showing rebuild wpa_supplicant with tkip enabled.
+
+```
+# /etc/portage/package.use/wpa_supplicant
+net-wireless/wpa_supplicant tkip
 ```
 
 Redshift
