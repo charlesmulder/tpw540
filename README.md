@@ -59,24 +59,23 @@ apulse skypeforlinux %U
 
 Spotify
 
-[spotifyd](https://github.com/Spotifyd/spotifyd/)
-[KeepassXC and secret service, a small walk-through](https://avaldes.co/2020/01/28/secret-service-keepassxc.html)
+[librespot](https://github.com/librespot-org)
 
-```sh
-apulse spotifyd ----backend pulseaudio --bitrate 320 --device USB --username <username> --password-cmd "secret-tool lookup spotify.com 002c0194-a278-4944-a249-736ad7424b96"
+Build librespot with ALSA backend
+
+```
+cargo build --release --no-default-features --features "alsa-backend"
+mv target/releases/librespot ~/bin/
+librespot -u <email-address> -b 320 -c /tmp/cache --enable-volume-normalisation --initial-volume 75 --device-type avr
 ```
 
 [spotify-tui](https://github.com/Rigellute/spotify-tui)
 
-```sh
-spotify-qt --help
-```
-
 [spotify-qt](https://github.com/kraxarn/spotify-qt)
 
-```sh
-spotify-tui --help
-```
+`spotify-qt` can be configured to autostart `librespot` on start.
+
+To start in debug mode try `spotify-qt --dev`
 
 Keymaps
 
