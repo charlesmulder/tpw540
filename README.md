@@ -66,7 +66,11 @@ Build librespot with ALSA backend
 ```
 cargo build --release --no-default-features --features "alsa-backend"
 mv target/releases/librespot ~/bin/
-librespot -u <email-address> -b 320 -c /tmp/cache --enable-volume-normalisation --initial-volume 75 --device-type avr
+
+# oauth authentication
+rm -r /home/cm/.cache/kraxarn
+librespot -u e7z4uojse@mozmail.com -c /home/cm/.cache/kraxarn/spotify-qt/librespot -j
+librespot --bitrate 320 --username e7z4uojse@mozmail.com --name "spotify-qt (librespot)" --initial-volume 100 --cache /home/cm/.cache/kraxarn/spotify-qt/librespot --autoplay on --backend alsa --device-type computer
 ```
 
 [spotify-tui](https://github.com/Rigellute/spotify-tui)
