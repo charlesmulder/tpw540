@@ -107,6 +107,22 @@ speaker-test -Ddefault:PCH -c 2
 speaker-test -Ddefault:USB -c 2
 ```
 
+```sh
+# ~/.asoundrc
+ctl.!default {
+        type hw
+        card 1
+}
+
+pcm.!default { 
+ type plug 
+         slave { 
+                 pcm "hw:1,0" 
+ } 
+}
+
+```
+
 ## Disks
 
 Boot and LVM for rest.
