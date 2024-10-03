@@ -107,6 +107,17 @@ speaker-test -Ddefault:PCH -c 2
 speaker-test -Ddefault:USB -c 2
 ```
 
+Sound working
+
+```sh
+# ~/.asoundrc
+defaults.pcm.!card PCH
+defaults.pcm.!device 0
+defaults.ctl.!card PCH
+```
+
+Working, but no sound on MS Teams
+
 ```sh
 # ~/.asoundrc
 ctl.!default {
@@ -122,6 +133,7 @@ pcm.!default {
 }
 
 ```
+
 
 ## Disks
 
