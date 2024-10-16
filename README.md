@@ -147,6 +147,12 @@ mkfs.xfs -n ftype=1
 xfs_info
 ```
 
+## Kernel params
+
+```
+snd-hda-intel.model=headset-mode-no-hp-mic
+```
+
 ## Make
 
 ```
