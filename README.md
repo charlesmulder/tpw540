@@ -133,7 +133,11 @@ pcm.!default {
 }
 
 ```
+modprobe snd_hda_intel model=headset-mic,dell-headset-multi,thinkpad auto_mute=0 auto_mic=0 multi_io=1 power_save_node=0 add_hp_mic=1
+```
 
+- [HD-Audio Codec-Specific Models](https://docs.kernel.org/sound/hd-audio/models.html#alc22x-23x-25x-269-27x-28x-29x-and-vendor-specific-alc3xxx-models)
+- [More Notes on HD-Audio Driver: Hint string](https://docs.kernel.org/6.0/sound/hd-audio/notes.html#hint-strings)
 
 ## Disks
 
